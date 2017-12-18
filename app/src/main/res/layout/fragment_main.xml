@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!--Content-->
+    <LinearLayout
+        android:background="@drawable/login_masterung"
+        android:layout_margin="@dimen/margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--User-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_action_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--TextField-->
+            <EditText
+                android:id="@+id/edtUser"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="@string/user"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <!--Password-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_action_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--TextField-->
+            <EditText
+                android:id="@+id/edtPassword"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <!--Login-->
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--New Register-->
+        <TextView
+            android:id="@+id/txtNewRegister"
+            android:clickable="true"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:text="New Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Toolbar-->
+    <include
+        android:id="@+id/toolbarDetail"
+        layout="@layout/my_toolbar" />
+
+    <!--Content-->
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <!--Category-->
+           <TextView
+               android:id="@+id/txtCategory"
+               android:textColor="#ffffff"
+               android:textStyle="bold"
+               android:layout_margin="10dp"
+               android:text="Category"
+               android:textSize="24sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <!--Image-->
+           <ImageView
+               android:id="@+id/imvImage"
+               android:layout_margin="15dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="150dp" />
+
+           <!--Detail-->
+           <TextView
+               android:background="#82ffffff"
+               android:padding="10dp"
+               android:id="@+id/txtDetail"
+               android:textColor="@color/colorPrimaryDark"
+               android:text="Detail"
+               android:textSize="18sp"
+               android:layout_margin="@dimen/margin"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
+
+
+   </ScrollView>
+
+</LinearLayout>
